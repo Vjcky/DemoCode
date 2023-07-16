@@ -6,6 +6,7 @@
 
    $connect = mysqli_connect($servername, $username, $password, $database);
    if($connect){
+    echo ("Hello");
     echo ("Ket noi thanh cong !");
     header("Location: /UNITOP-PHP/Vjcky/baitap.html");
    }else{
