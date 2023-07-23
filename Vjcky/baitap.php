@@ -305,6 +305,7 @@ function w3_close() {
    }else{ 
        $from = ($current_page - 1)*$sotin1trang;
    }
+   
    $qr = "SELECT * FROM user LIMIT $from, $sotin1trang";
    $ds = mysqli_query($conn,$qr);
    $iq = "SELECT * FROM user";
