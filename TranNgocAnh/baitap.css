@@ -119,7 +119,7 @@ html {
   float: left;
   width: 40%;
   padding: 50px;
-  font-family: "Raleway", sans-serif;
+
 }
 
 .khung1::after {
@@ -133,11 +133,9 @@ html {
   margin-top: 250px;
 }
 #cochu1 {
-  font-family: "Raleway", sans-serif;
   font-size: 40px;
 }
 #cochu2 {
-  font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
 .botton2 {
@@ -327,7 +325,8 @@ input[type=text] {
     
 }
 
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 375px) {
   .menu-tab-icon{
     display:block;
   }
@@ -338,5 +337,43 @@ input[type=text] {
   
   #colum {
     width: 100%;
+  }}
+  @media screen and (max-width: 375px) {
+  #colum2{
+    width: 80%;
+     display: flex;  
+     flex-wrap: wrap;
+     align-content: flex-start;
+    }
+  #colum3{
+    width: 80%;
   }
-}
+  .row2 {
+    display: flex;  
+     flex-wrap: wrap;
+     align-content: flex-start;
+  }
+  #cot2{
+    width: 50%;
+  }
+  #cot3{
+    width: 50%;
+  }
+  #cot1{
+    width: 80%;
+  }
+  .hehe {
+    display: flex;  
+     flex-wrap: wrap;
+     align-content: flex-start;
+  }
+  
+  }
+
+
+/* .flex-container {  
+  display: flex;  
+  flex-wrap: wrap;  
+  align-content: flex-start;} */
+
+  

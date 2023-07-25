@@ -73,7 +73,7 @@ function onScroll() {
   }
 }
 
-<script>
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -151,8 +151,8 @@ function w3_close() {
         </div>
 </div>
   
-<div class="khung1"> 
-        <div id="colum2">
+<div class="khung1" > 
+        <div id="colum2" >
         <h3 id = 'cochu1'> We know design</h3>
         <p id = 'cochu2'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore.</p>
@@ -163,7 +163,7 @@ function w3_close() {
                 </button>
             </form>
         </div>
-        <div id="colum2">
+        <div id="colum2" >
             <img src="https://bitly2s.com/ztzrav" alt="Pineapple" style="width:700px;height:400px;margin-top:10px;">
     </div>
 </div>
@@ -171,9 +171,7 @@ function w3_close() {
         <h3> THE TEAM</h3>
         <p> The ones who runs this company</p>
     </div>
-    <div>
-    
-</div>
+  
 <p><br><brr></p>
     <div class="row2"> 
         <div id="colum3">
@@ -277,7 +275,7 @@ function w3_close() {
        <tfoot>
                <tr>
                    <td colspan="8">
-                       <a href="add.php"><button id="button">Add member</button></a>
+                       <a href="insert.php"><button id="button">Add Member</button></a>
                    </td>
                </tr>
        </tfoot>
@@ -327,10 +325,10 @@ function w3_close() {
                echo "<td>$monan[Name]</td>";
                echo "<td>$monan[Email]</td>";
                echo "<td>$monan[Job]</td>";
-               echo '<td><a href="./edit.php"ID=10>Edit</a></td>';
-               echo '<td><a href="./delete.php"ID=<?=$row[ID?]>Delete</a></td>';
+               echo '<td><a href="./edit.php?ID='.$monan['ID'].'">Edit</a></td>';
+               echo '<td><a href="./delete.php?ID='.$monan['ID'].'">Delete</a></td>';
            }}
-
+        //   <td><a href="delete.php?id='.$value['id'].'"> Delete</a></td>
        ?>
    </div>
    <div id = "phantrang">
